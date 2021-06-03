@@ -54,6 +54,7 @@ class DJSetController extends AbstractController
                     $gamificationService = new GamificationCalculator();
                     $songData = $_POST;
                     $songData['user_id'] = $_POST['user_id'];
+                    var_dump($_POST['user_id']);
                     $songManager->insert($songData);
 
                     $badges = [];
